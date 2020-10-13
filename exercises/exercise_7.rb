@@ -10,3 +10,7 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+@store2.employees.create(last_name: "Pants", hourly_rate: 17786).valid?
+@store2.employees.create(first_name: "Trunko", last_name: "Pants-DELUXE", hourly_rate: 89).valid?
+@employee_temp = Employee.create(store_id: 4, first_name: "NOPE", last_name: "Pants-DELUXE", hourly_rate: 89)
+store8 = Store.create(name: "waddlesworth", annual_revenue: -190000, mens_apparel: true , womens_apparel: false )
